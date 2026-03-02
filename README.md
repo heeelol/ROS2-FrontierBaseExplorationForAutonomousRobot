@@ -36,16 +36,20 @@ model, for example, using the following command:
 
 `export TURTLEBOT3_MODEL=burger`
 
-
 `ros2 launch turtlebot3_gazebo turtlebot3_world.launch.py`
 
-3 - Once the simulation environment is running, run the autonomous_exploration 
+3 - Run the following command to view the environment map (CHANGE THE PATH TO WHERE YOUR "tb3_cartograpger.rviz" file RESIDES)
+
+`rviz2 -d /home/jw/turtlebot3_ws/src/turtlebot3/turtlebot3_cartographer/rviz/tb3_cartographer.rviz`
+
+4 - Once the simulation environment is running, run the autonomous_exploration 
 
 package using the following command:
 
 `ros2 run autonomous_exploration control`
 
 This will start the robot's autonomous exploration.
+
 
 ## Requirements
 
